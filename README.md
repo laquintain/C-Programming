@@ -7,6 +7,16 @@ Students may not have a way to keep track of links or remember details and that 
 2. After making a selection with numbers 1-7, a text file will appear on console with the appropriate message displayed.
 3. After reading the displayed message, the user can then press ENTER to return to the main menu.
 
-**Updates**
+**Latest Update**
 1. Continues to use modular programming.
 2. Uses struct to display the date and time so that students remember what day it is after late nights doing homework.
+
+**Previous Updates**
+*Moduler and Arrays
+1. testMain() added to test2.c and separates the 7th case from the rest of the code.
+2. Added a grade average calculator that holds six grades and then calculates the average. Returning to the main menu is still accessable.
+3. The seventh menu line displays a secret message to reassure students.
+4. Updated case 5 to print where the counselor information can be found.
+
+*Case Testing
+1. Created reports and tested the program for future release.
