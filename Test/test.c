@@ -208,11 +208,10 @@ int main()
 			char myFile = NULL;
 			errno_t err = 0;
 			char file_name[256];
-			char* cs = 0;
 
 			err = fopen_s(&myFile, "no.txt", "r");
 			if ((err != 0) || (myFile)) {
-				printf_s("Cannot process letter key entries!\n");
+				printf_s("End of the road!\n");
 				exit(-1);
 			}
 			//printf("\n\nERROR: Invalid.\n\n"); //If above 8 cases, return to the main menu
