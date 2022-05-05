@@ -13,7 +13,7 @@ Students may not have a way to keep track of links or remember details and that 
 2. Failure statement to close the program if a letter key is pressed.
 
 **Previous Updates**
-*Struct*
+*Struct
 1. Continues to use modular programming.
 2. Uses struct to display the date and time so that students remember what day it is after late nights doing homework.
 
