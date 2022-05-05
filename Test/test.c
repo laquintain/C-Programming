@@ -10,7 +10,6 @@ Dr. Amr Elchouemi
 #include <stdio.h> //Must have always.
 #include <stdlib.h>
 #include "got.h" //Header File
-#include <assert.h> //Future debugging
 
 int Menu()
 {
@@ -24,7 +23,7 @@ int Menu()
 	printf("5 - When in Doubt\n");
 	printf("6 - Grade Average\n"); //Makes use of Arrays and Pointers
 	printf("7 - Secret Message\n");
-	printf("8 - Forget The Time and Date?");
+	printf("8 - Forget The Time and Date?\n");
 	printf("\nPress ENTER after reading your selection to return to the main menu.\n"); //Advice on returning to the main menu.
 	printf("\nMake your selection: ");
 	scanf_s("%d", &i);
@@ -103,8 +102,10 @@ int main()
 				char lb;
 				char lre = 0;
 
+				//testing lib
 				lib = fopen("library.txt", "r"); //Opens the text file and reads the file.
 				printf("Need a book?\n");
+
 				//Do while loop
 				do {
 					lb = fgetc(lib);
@@ -194,16 +195,28 @@ int main()
 		}
 	case 7: //Secret Message
 		{
-				testMain(); //Modular example that pulls from test2.c
+			extern int testMain(); //Modular example that pulls from test2.c
 		}
 	case 8:
 		{
-			atrMain(); //Modular, see Test2
+			extern int atrMain(); //Modular, see Test2
 		}
 	default: // Displays an error message if the client tries to go over the listed numbers.
 		{
-			printf("\n\nERROR: Invalid.\n\n"); //If above 8 cases, return to the main menu
-			return main(); //Needed to immediately return to the main menu upon error
+			//Updated to disallow letter keys
+			int i;
+			char myFile = NULL;
+			errno_t err = 0;
+			char file_name[256];
+			char* cs = 0;
+
+			err = fopen_s(&myFile, "no.txt", "r");
+			if ((err != 0) || (myFile)) {
+				printf_s("Cannot process letter key entries!\n");
+				exit(-1);
+			}
+			//printf("\n\nERROR: Invalid.\n\n"); //If above 8 cases, return to the main menu
+			//return main(); //Needed to immediately return to the main menu upon error
 		}
 	}
 }

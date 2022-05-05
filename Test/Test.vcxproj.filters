@@ -23,10 +23,18 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Tech.txt" />
-    <Text Include="halo.txt" />
-    <Text Include="library.txt" />
-    <Text Include="main.txt" />
+    <Text Include="halo.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="library.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="main.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Tech.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="got.h">
