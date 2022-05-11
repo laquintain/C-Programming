@@ -214,8 +214,6 @@ int main()
 				printf_s("End of the road!\n");
 				exit(-1);
 			}
-			//printf("\n\nERROR: Invalid.\n\n"); //If above 8 cases, return to the main menu
-			//return main(); //Needed to immediately return to the main menu upon error
 		}
 	}
 }
