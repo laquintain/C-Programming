@@ -195,11 +195,11 @@ int main()
 		}
 	case 7: //Secret Message
 		{
-			extern int testMain(); //Modular example that pulls from test2.c
+			testMain(); //Modular example that pulls from test2.c
 		}
 	case 8:
 		{
-			extern int atrMain(); //Modular, see Test2
+			atrMain(); //Modular, see Test2
 		}
 	default: // Displays an error message if the client tries to go over the listed numbers.
 		{
